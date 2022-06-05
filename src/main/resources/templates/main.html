@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <header th:insert="block/header :: head"></header>
+</head>
+<body>
+<header th:insert="block/header :: header"></header>
+<divopen th:insert="block/pagestyle :: pagestyle"></divopen>
+<h4>Курс валют:</h4>
+<div th:insert="block/form :: form"></div>
+<table>
+    <thead>
+    <tr>
+        <th>Валюта</th>
+        <th>Курс сегодня</th>
+        <th>Сравнить</th>
+    </tr>
+    </thead>
+    <tbody>
+    <div th:each="i : ${page}">
+        <tr>
+            <td th:text="${i.getKey()}"/>
+            <td th:text="${i.getValue()}"/>
+            <td><a th:href="'/' + ${i.getKey()}">check</a></td>
+        </tr>
+    </div>
+    </tbody>
+</table>
+<divclose th:insert="block/divclose :: divclose"></divclose>
+</body>
+</html>
