@@ -5,9 +5,9 @@
 
 ## Инструкция по запуску:
 
-1 Скопировать ссылку https://github.com/d351d3r/gifexchanger.git
+1. Скопировать ссылку https://github.com/d351d3r/gifexchanger.git
 
-2 В среде разработки:
+2. В среде разработки:
 
   2.1 Открыть File -> New -> Project from Version Control
   
@@ -15,4 +15,5 @@
   
   2.3 Нажать кнопку Clone
   
-3 В терминале среды разработки выполнить Gradle -> clean -> build и запустить исполняемый файл DemoAplication.java
+3. В терминале среды разработки выполнить Gradle -> clean -> build и запустить исполняемый файл DemoAplication.java
+4. Перейти в браузере по адресу localhost:8080
