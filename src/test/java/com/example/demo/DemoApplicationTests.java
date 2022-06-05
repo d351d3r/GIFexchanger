@@ -25,10 +25,10 @@ class DemoApplicationTests {
 
     @Test
     public void test() throws Exception {
-        this.mockMvc.perform(get("/")) //пойти по пути
-                .andDo(print()) // вывести на экран
-                .andExpect(status().isOk()) //ответ от сервера 200
-                .andExpect(content().string(CoreMatchers.containsString("RUB"))); // ждем контент с указанным текстом
+        this.mockMvc.perform(get("/"))
+                .andDo(print())
+                .andExpect(status().isOk())
+                .andExpect(content().string(CoreMatchers.containsString("RUB")));
     }
 }
 
